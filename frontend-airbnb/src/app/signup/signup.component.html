@@ -1,0 +1,48 @@
+<header>
+
+  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <h3><a class="navbar-brand" routerLink="/booking">BookMe</a></h3>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/signup">Sign Up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/login">Log In</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<body class="body-login">
+  <form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" [(ngModel)]="user.email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="username" class="form-label">User Name</label>
+      <input type="text" [(ngModel)]="user.username" class="form-control" id="username" aria-describedby="emailHelp" name="username" ngModel>
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" [(ngModel)]="user.password" class="form-control" id="password" name="password" ngModel>
+    </div>
+
+    <div class="mb-3">
+      <label for="password" class="form-label">Confirm Password</label>
+      <input type="password" [(ngModel)]="user.password" class="form-control" id="password" name="password" ngModel>
+      <a routerLink="/login">I have account here</a>
+    </div>
+    <button type="submit" (click)="newUser()" class="btn btn-primary">Submit</button>
+
+  </form>
+</body>

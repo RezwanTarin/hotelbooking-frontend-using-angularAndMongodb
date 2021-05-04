@@ -1,0 +1,13 @@
+.search {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 40%;
+  height: 20%;
+}
+.buttonS {
+  margin-top: 30px;
+}
